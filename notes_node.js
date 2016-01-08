@@ -1,7 +1,7 @@
 /*
 
 Czego potrzebuje js, żeby zarządzać serwerem:
-- organizacja kodu w moduły gotowe do ponownego użycia (node, ES6)
+- organizacja kodu w moduły gotowe do ponownego użycia, nie kolidujące z pozostałym kodem (node, ES6)
 - obsługa plików
 - obsługa bazy danych
 - możliwość komunikacji przez Internet
@@ -25,5 +25,21 @@ Narzędzia js to biblioteki js, które w większości są wraperami na funkcje (
 Node.js to framework i biblioteka kodu. Funkcje frameworku są realizowane za pomocą narzędzi js i konsolowych.
 
 Naszym środowiskiem wykonywania kodu js jest node.js. Po stronie klienta takim środowiskiem jest przeglądarka.
+
+*/
+
+/*
+
+Moduły
+- moduły commonjs
+
+First-Class Functions and Function Expressions
+- funkcji First-Class można używać w podobny sposób jak pozostałe typy, można je przekazywać, przypisywać do zmiennych, przechowywać w tablicy i inne; można pisać Function Expressions
+- wyrażenie - blok kodu, którego wykonanie daje wartość (podobnie jak liczba lub string); Function Expressions są możliwe dzięki temu, że funkcje w js są First-Class
+- funkcje w js są obiektami specjalnego typu
+
+Name/Value Pair
+- wartością może być typ prymitywny, obiekt lub funkcja (kiedy funkcja jest połączona z obiektem, to mamy metodę)
+- literał obiektu - pary name/value, oddzielone przecinkiem, ujęte w klamry
 
 */
