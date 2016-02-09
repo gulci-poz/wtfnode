@@ -1,7 +1,7 @@
 /*
 
 Czego potrzebuje js, żeby zarządzać serwerem:
-- organizacja kodu w moduły gotowe do ponownego użycia, nie kolidujące z pozostałym kodem (node, ES6)
+- organizacja kodu w moduły gotowe do ponownego użycia, nie kolidujące (chronione) z pozostałym kodem (node, ES6)
 - obsługa plików
 - obsługa bazy danych
 - możliwość komunikacji przez Internet
@@ -14,7 +14,7 @@ Node.js to po prostu program napisany w C++, który jako podstawę wykorzystuje 
 
 Na bardzo wysokim poziomie, node.js to rozbudowany silnik V8.
 
-V8 w przeglądarce obsługuje nie tylko kod js zgodny z ECMA; świetnym przykładem jest DOM, który nie jest częścią standardu (a który jest eksponowany przez przeglądarkę za pomocą js; tym samym przeglądarka umożlwia jego przetwarzanie w silniku js). Również konsola js w dev tools. V8 w przeglądarce, podobnie jak V8 w node.js jest wzbogacony dodatkowymi funkcjami, odpowiednimi do kontekstu działania (z jednej strony środowisko przeglądarki, a zatem klienta; z drugiej, środowisko samodzielnego komputera, np. pełniącego rolę serwera, w tym serwera web).
+V8 w przeglądarce obsługuje nie tylko kod js zgodny z ECMA; świetnym przykładem jest DOM, który nie jest częścią standardu (a który jest eksponowany przez przeglądarkę za pomocą js - dzięki API JavaScript; tym samym przeglądarka umożlwia jego przetwarzanie w silniku js). Również konsola js w dev tools. V8 w przeglądarce, podobnie jak V8 w node.js jest wzbogacony dodatkowymi funkcjami, odpowiednimi do kontekstu działania (z jednej strony środowisko przeglądarki, a zatem klienta; z drugiej, środowisko samodzielnego komputera, np. pełniącego rolę serwera, w tym serwera web). Też BOM - Browser Object Model.
 
 V8 i npm są zależnościami w projekcie node.js. Są jeszcze inne zależności, np. libuv, http_parser, zlib. Są to biblioteki C++.
 
