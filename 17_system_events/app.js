@@ -33,7 +33,7 @@ Callback - funkcja przekazana do innej funkcji; kiedy funkcja wykona swój kod, 
 
 // strumienie i bufory
 // bufor - tymczasowe miejsce w pamięci dla danych przenoszonych z jednego miejsca w inne miejsce; bufor celowo ma ograniczony rozmiar; wykorzystywany do przyśpieszenia wykonywania operacji transferu danych; dane są przemieszczane za pomocą strumienia
-// strumień - sekwencja danych dostępnych w określonym czasie; ta sekwencja to porcje danych, które docelowo uformują całość; nie przetwarzamy całości danych, tylko jedną porcję w sekwencji, np. odczytywanie porcji strumienia wideo z nadchodzących danych, zamiast odtwarzania całego wideo po ściągnięciu całości
+// strumień - sekwencja danych dostępnych w określonym czasie; ta sekwencja to porcje danych (chunks), które docelowo uformują całość; nie przetwarzamy całości danych, tylko jedną porcję w sekwencji, np. odczytywanie porcji strumienia wideo z nadchodzących danych, zamiast odtwarzania całego wideo po ściągnięciu całości
 // często łaczymy te dwa koncepty, dane ze strumienia idą do bufora, taka porcja danych idzie do przetworzenia i zarazem zwalnia bufor dla nadchodzących danych ze strumienia
 // buforowanie - kompletowanie wystarczającej ilości danych do przetworzenia, np. ściąganie danych wideo do odtworzenia w danym odcinku czasu
 

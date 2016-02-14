@@ -1,5 +1,5 @@
 // callbacks
-// dobry do przekazywania danyc, np. wyciągniętych z bazy danych
+// dobry do przekazywania danych, np. wyciągniętych z bazy danych
 
 function greet(callback) {
     console.log("Hello");
