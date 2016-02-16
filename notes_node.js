@@ -6,7 +6,7 @@ Czego potrzebuje js, żeby zarządzać serwerem:
 - obsługa bazy danych
 - możliwość komunikacji przez Internet
 - możliwość odbierania żądań i wysyłania odpowiedzi w standardowy sposób (HTTP Requests/Responses)
-- zdolność do wykonywania obliczeń, które potrzebują dużo zasobów i czasu
+- zdolność do wykonywania obliczeń, które potrzebują dużo zasobów i czasu (też np. zapis/odczyt danych - asynchronicznie)
 
 Node.js opakowuje silnik V8 (kod C++) dodatkowym kodem C++ i oferuje szereg dodatkowych możliwości eksponowanych za pomocą js (ściślej: za pomocą powiązań w kodzie V8); wymienione wyżej funkcje serwera web to tylko niektóre z tych możliwości.
 

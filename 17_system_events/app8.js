@@ -8,6 +8,6 @@ var readable = fs.createReadStream(
 var writable = fs.createWriteStream(__dirname + "/lipsum_copy.txt");
 
 readable.on("data", function (chunk) {
-    // da się to zrobić szybciej w node
+    // da się to zrobić szybciej w node -> pipe
     writable.write(chunk);
 });
