@@ -11,7 +11,7 @@
 // node zapewnia dostęp do tych funkcji OS, możemy utworzyć socket w celu nawiązania połączenia sieciowego i przesyłania informacji
 // node przeważnie sprawuje rolę serwera web, ale można też zbudować serwer plików lub serwer email
 // TCP przypomina strumień
-// mamy pipeline pomiedzy klientem i serwerem, gdzie dane wędruja w postaci strumieni
+// mamy pipeline pomiedzy klientem i serwerem, gdzie dane wędrują w postaci strumieni
 // gniazda są często zamykane, dla nowych żądań otwierane są kolejne gniazda
 // WebSocket - gniazda są cały czas otwarte
 // port - numer (też socket address); decyduje do którego programu trafią pakiety, program nasłuchuje na danym porcie; node też możemy przypisać port do nasłuchiwania
@@ -41,4 +41,4 @@ Content-Type: text/html
 // w node mamy program http_parser - komponowanie zapytań (z danych tekstowych i binarnych) i dekodowanie odpowiedzi HTTP; oprócz tego program jest też eksponowany w node w postaci JS
 // mamy moduły http i https
 // moduł _http_server korzysta (wrapuje) z modułu http_parser (kod C i C++), z kolei http korzysta z modułu _http_server
-// w node możemy wysłać i przyjąć request oraz wysłać response
+// request i response możemy w node przyjąć lub wysłać
