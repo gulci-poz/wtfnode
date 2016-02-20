@@ -14,7 +14,7 @@ var port = process.env.PORT || 3000;
 
 // routing w express
 // funkcje w express (pisane małymi literami) zawierają kod, który ma się wykonać po przyjściu odpowiedzi na wysłane żądanie (kod wykonuje się w callbaku)
-// reg i res to zmienne express, które wrapują zmienne node
+// req i res to zmienne express, które wrapują zmienne node
 // do tego samego urla można dodać obsługę innego typu żądania, np. post
 app.get("/", function (req, res) {
     // express i obiekt res widzą, co wysyłamy do przeglądarki i same zadbają o nadanie content type
