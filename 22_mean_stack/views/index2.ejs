@@ -1,0 +1,28 @@
+<html ng-app="TestApp">
+    <head>
+        <title>The MEAN Stack App</title>
+
+        <script src="assets/js/angular.min.js">
+        </script>
+    </head>
+    <body ng-controller="MainController as vm">
+
+        <ul>
+            <li ng-repeat="person in vm.people">
+                {{ person.name }}
+            </li>
+        </ul>
+
+        <script>
+            // = daje konwersję do postaci zgodnej z html
+            // - string JS bez konwersji (tutaj string JSON)
+            // pod zmienną po stronie klienta podstawiam string uzyskany na serwerze przez podstawienie do szablonu ejs
+            // nie można tego fragmentu dać do osobnego pliku JS, ponieważ silnik szablonów będzie pracował tylko na wskazanym pliku index
+
+            var clientPeople = <%- JSON.stringify(serverPeople) %>;
+        </script>
+        <script src="assets/js/app2.js">
+        </script>
+
+    </body>
+</html>

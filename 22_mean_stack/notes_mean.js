@@ -1,4 +1,4 @@
-// stos (stack) - kombinacja wszystkich technologii wykorzystanych przy budowaniu aplikacji; w przypadku web: baza danych, front-end, back-end  i wszystkie inne technologie
+// stos (stack) - kombinacja wszystkich technologii wykorzystanych przy budowaniu aplikacji; w przypadku web: baza danych, front-end, back-end  i wszystkie inne technologie (też np. design i UX)
 // stos - jedna technologia korzysta z wyników danych przez inną technologię, wszystkie pracują na wynik działania aplikacji; to nie jest stos w rozumieniu struktury danych - raczej zestaw technologii, które niekoniecznie w każdym punkcie układają się w stos, ale w danej chwili jedna zależy od wyników drugiej
 
 // Angular - wysyłanie żądań, przyjmowanie odpowiedzi, kontakt z backendem
@@ -29,3 +29,9 @@
 // ng-controller - kontrola nad kodem w danym segmencie, np. tag body
 // node dostarcza zawartość statycznych plików z public, ale ich nie przetwarza, będzie to robiła przeglądarka (klient); żądanie idzie od klienta
 // w head możemy ładować skrypty odpowiedzialne za renderowanie strony, będą załadowane przed elementami z body
+// ng-model - podstawienie danych z modelu, podobnie jak z {{}} mamy update DOM; każde wpisanie znaku pociąga wystąpienie zdarzenia - do tego binding śledzi modyfikacje zmiennej
+// takiej dynamiki i szybkości nie dało by się osiągnąć wysyłając zapytania do serwera (node), tutaj wszystko dzieje się po stronie klienta
+// można coś za jednym zapytaniem ściągnąć, np. UI w postaci JSON i potem dynamicznie nim sterować za pomocą angular, nie robiąc ani jednego zbędnego zapytania
+// w tle angular może też wysyłać żądania i odbierać dane z serwera
+// ng-repeat - iterowanie po obiekcie JS, np. tablicy
+// używając szablonu, w response z node przesyłamy całą stronę; jeśli chcielibyśmy przesyłać tylko kawałek danych (np. JSON), to można użyć AJAX, angular lub web API
